@@ -1,7 +1,7 @@
  
 
 import React, { useState } from "react";   
-import AboutUs from "../components/AboutUs/AboutUs";
+import Community from "../components/Community/Community";
 
 export default function DashboardPage() {
   const [menuOpen, setMenuOpen] = useState(false); 
@@ -9,8 +9,8 @@ export default function DashboardPage() {
   return (
     // <PrivateRoute>
 
-    <div>  
-        <AboutUs /> 
+    <div>   
+        <Community />  
     </div>
     // </PrivateRoute>
   );

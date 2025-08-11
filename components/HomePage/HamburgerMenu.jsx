@@ -40,22 +40,22 @@ export default function HamburgerMenu() {
       >
         <div className="p-6 space-y-6">
           {/* <h2 className="text-lg font-bold text-[#FFC32B]">Menu</h2> */}
-          <Link href="https://doach-2adx.vercel.app/login"
+          <Link href="/login"
             className="block px-3 py-3 rounded-md hover:bg-[#FFC32B]/10 cursor-pointer text-sm border-b !border-gray-700 mt-5 text-left text-white hover:!text-[#FFC32B]"
           >
             Login
           </Link>
-          <Link href="https://doach-2adx.vercel.app/signUp"
+          <Link href="/signUp"
             className="block px-3 mt-0 py-3 rounded-md hover:bg-[#FFC32B]/10 cursor-pointer text-sm border-b !border-gray-700 text-left text-white hover:!text-[#FFC32B]"
           >
             Create Account
           </Link>
-          <Link href="#"
+          <Link href="/aboutUs"
             className="block px-3 mt-0 py-3 rounded-md hover:bg-[#FFC32B]/10 cursor-pointer text-sm border-b !border-gray-700 text-left text-white hover:!text-[#FFC32B]"
           >
             About Doach
           </Link>
-          <Link href="#"
+          <Link href="/community"
             className="block px-3 mt-0 py-3 rounded-md hover:bg-[#FFC32B]/10 cursor-pointer text-sm border-b !border-gray-700 text-left text-white hover:!text-[#FFC32B]"
           >
             Community

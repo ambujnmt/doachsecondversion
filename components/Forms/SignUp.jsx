@@ -3,7 +3,7 @@ import React from "react";
 export default function SignUp() {
   return (
     <section className="loginForm">
-      <div className="relative min-h-screen flex items-center justify-center bg-[#a77100] overflow-hidden">
+      <div className="relative min-h-screen flex items-center justify-center bg-[#FFC32B] overflow-hidden">
         <div className="bg-white absolute top-15 shadow-xl rounded-2xl w-full max-w-4xl flex z-10">
           
           {/* Left Side Image */}
@@ -92,7 +92,7 @@ export default function SignUp() {
                 {/* Submit Button */}
                 <button
                   type="button"
-                  className="flex justify-center items-center gap-2 font-bold w-full text-[15px] md:text-[14px] lg:text-[16px] xl:text-[16px] my-2 text-center text-white rounded-[600px] bg-yellow-600 hover:bg-[#000] py-2 hover:border"
+                  className="flex justify-center items-center gap-2 font-bold w-full text-[15px] md:text-[14px] lg:text-[16px] xl:text-[16px] my-2 text-center text-black rounded-[600px] bg-[#FFC32B] hover:bg-[#000] py-2 hover:border hover:!text-white"
                 >
                   Sign Up
                 </button>

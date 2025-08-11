@@ -5,7 +5,7 @@ import { FaArrowLeftLong } from "react-icons/fa6";
 export default function Login() {
   return (
     <section className="loginForm">
-      <div className="relative min-h-screen flex items-center justify-center bg-[#a77100] overflow-hidden">
+      <div className="relative min-h-screen flex items-center justify-center bg-[#FFC32B] overflow-hidden">
         <div className="bg-white absolute top-15 shadow-xl rounded-2xl w-full max-w-4xl flex z-10">
           
           {/* Left Side Image */}
@@ -72,14 +72,14 @@ export default function Login() {
                 {/* Submit Button */}
                 <button
                   type="button"
-                  className="flex justify-center items-center gap-2 font-bold w-full text-[15px] md:text-[14px] lg:text-[16px] xl:text-[16px] my-2 text-center text-white rounded-[600px] bg-yellow-600 hover:bg-[#000] py-2 hover:border border-yellow-600 duration-300"
+                  className="flex justify-center items-center gap-2 font-bold w-full text-[15px] md:text-[14px] lg:text-[16px] xl:text-[16px] my-2 text-center text-black rounded-[600px] bg-[#FFC32B] hover:bg-[#000] py-2 hover:border border-yellow-600 duration-300 hover:!text-white"
                 >
                   Login
                 </button>
 
                 <div className="mt-3">
                   <p className="text-center text-white text-sm">
-                    New to DOACH <Link href="/signUp" className="text-gray-300 hover:text-yellow-600">Create Account</Link>
+                    New to DOACH <Link href="/signUp" className="text-gray-300 hover:text-yellow-600 underline">Create Account</Link>
                   </p>
                 </div>
               </form>
