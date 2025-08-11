@@ -4,15 +4,13 @@ export default function Main() {
   const [fadeOut, setFadeOut] = useState(false);
 
   useEffect(() => {
-    // Trigger fade out after 2.5 seconds
     const fadeTimer = setTimeout(() => {
       setFadeOut(true);
-    }, 2500);
+    }, 8000);
 
-    // Redirect to signUp page after full transition (3 seconds)
     const redirectTimer = setTimeout(() => {
-      window.location.href = '/home'; // ✅ Simple client-side redirect
-    }, 3000);
+      window.location.href = '/home';
+    }, 8000);
 
     return () => {
       clearTimeout(fadeTimer);
@@ -21,12 +19,19 @@ export default function Main() {
   }, []);
 
   return (
-    <section
-      className={`bg-black min-h-screen flex flex-col gap-5 items-center justify-center transition-opacity duration-500 ${
+    <div
+      className={`bg-black min-h-screen flex items-center justify-center transition-opacity duration-500 ${
         fadeOut ? 'opacity-0' : 'opacity-100'
       }`}
     >
-      <img src="https://nmtdevserver.com/doach/logo.png" className="w-[30%] md:w-[40%] lg:w-[50%] xl:w-[40%]" alt="Logo" />
-    </section>
+      <video
+        src="https://nmtdevserver.com/doach/video.mp4" 
+        autoPlay
+        muted
+        playsInline
+        className="w-full h-full object-cover"
+      />
+    </div>
   );
 }
+ 
