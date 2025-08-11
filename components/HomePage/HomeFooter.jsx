@@ -10,7 +10,7 @@ export default function HomeFooter() {
         <>
             <footer className="py-10">
                 <Container maxWidth="lg">
-                <div className="flex flex-col md:flex-row justify-between items-center gap-6">
+                <div className="flex flex-col md:flex-row justify-between xl:items-center gap-6">
                     <div className="text-left">
                     <div className="text-2xl font-extrabold text-yellow-400">
                         <img src="https://nmtdevserver.com/doach/logo.png" alt="image" className='w-[40%] h-auto mb-3' />
@@ -22,16 +22,16 @@ export default function HomeFooter() {
 
                     <div className="flex items-center gap-4">
                     <a className="w-10 h-10 rounded-full bg-white flex items-center justify-center hover:!bg-yellow-400 transition duration-300" href="#" aria-label="Instagram">
-                        <FaInstagram />
+                        <FaInstagram className='text-black' />
                     </a>
                     <a className="w-10 h-10 rounded-full bg-white flex items-center justify-center hover:!bg-yellow-400 transition duration-300" href="#" aria-label="TikTok">
-                        <FaTiktok />
+                        <FaTiktok className='text-black' />
                     </a>
                     <a className="w-10 h-10 rounded-full bg-white flex items-center justify-center hover:!bg-yellow-400 transition duration-300" href="#" aria-label="YouTube">
-                        <FaYoutube />
+                        <FaYoutube className='text-black' />
                     </a>
                     <a className="w-10 h-10 rounded-full bg-white flex items-center justify-center hover:!bg-yellow-400 transition duration-300" href="#" aria-label="X">
-                        <FaXTwitter />
+                        <FaXTwitter className='text-black' />
                     </a>
                     </div>
                 </div>

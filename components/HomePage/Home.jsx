@@ -144,13 +144,15 @@ export default function Home() {
                 </div>
 
                 {/* Scroll arrow */}
-                <button
-                onClick={scrollToNext}
-                aria-label="Scroll to event"
-                className="absolute bottom-8 left-1/2 transform -translate-x-1/2 text-[#FFC32B] text-3xl animate-bounce z-20 border !border-yellow-500 w-[80px] h-[80px] rounded-full"
-                >
-                ↓
-                </button>
+                <div className="">
+                    <button
+                        onClick={scrollToNext}
+                        aria-label="Scroll to event"
+                        className="absolute bottom-8 left-1/2 transform -translate-x-1/2 text-[#FFC32B] text-3xl animate-bounce z-20 xl:border !border-yellow-500 xl:w-[80px] xl:h-[80px] rounded-full"
+                        >
+                        ↓
+                    </button>
+                </div>
             </section>
             {/* // Hero section */}
 
@@ -160,7 +162,7 @@ export default function Home() {
                 <section id="nftc" className="py-24">
                     <Container maxWidth="lg">
                     <div className="text-center px-4">
-                        <h2 className="text-4xl md:text-5xl font-bold text-[#FFC32B] mb-4">DOACH × CAVS</h2>
+                        <h2 className="text-3xl md:text-5xl font-bold text-[#FFC32B] mb-4">DOACH × CAVS</h2>
                         <p className="text-lg text-white mb-6">National Free Throw Challenge</p>
                         <p className="mx-auto text-white/80 max-w-3xl mb-12">
                         DOACH is the AI-powered coaching platform that personalizes your training experience. Through advanced
@@ -191,7 +193,7 @@ export default function Home() {
                         <div className="mt-12">
                         <button
                             onClick={openSignupModal}
-                            className="px-8 py-4 bg-[#FFC32B] text-black rounded-full font-semibold shadow-md hover:bg-yellow-300 transition"
+                            className="px-8 py-3 bg-[#FFC32B] text-black rounded-full font-semibold shadow-md hover:bg-yellow-300 transition"
                         >
                             Sign Up for NFTC
                         </button>

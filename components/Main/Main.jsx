@@ -20,7 +20,7 @@ export default function Main() {
 
   return (
     <div
-      className={`bg-black min-h-screen flex items-center justify-center transition-opacity duration-500 ${
+      className={`bg-black min-h-screen h-[100vh] flex items-center justify-center transition-opacity duration-500 ${
         fadeOut ? 'opacity-0' : 'opacity-100'
       }`}
     >

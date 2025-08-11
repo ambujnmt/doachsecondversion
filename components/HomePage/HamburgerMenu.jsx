@@ -1,5 +1,6 @@
  
 import { useState } from "react";
+import { Link } from "@heroui/react";
 
 export default function HamburgerMenu() {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -39,30 +40,46 @@ export default function HamburgerMenu() {
       >
         <div className="p-6 space-y-6">
           {/* <h2 className="text-lg font-bold text-[#FFC32B]">Menu</h2> */}
-          <div
-            className="block px-3 mt-0 py-3 rounded-md hover:bg-[#FFC32B]/10 cursor-pointer text-sm border-b !border-gray-700 mt-5"
-            onClick={() => alert("Sign Up")}
+          <Link href="https://doach-2adx.vercel.app/login"
+            className="block px-3 py-3 rounded-md hover:bg-[#FFC32B]/10 cursor-pointer text-sm border-b !border-gray-700 mt-5 text-left text-white hover:!text-[#FFC32B]"
           >
-            Sign Up for NFTC
-          </div>
-          <div
-            className="block px-3 mt-0 py-3 rounded-md hover:bg-[#FFC32B]/10 cursor-pointer text-sm border-b !border-gray-700"
-            onClick={() => alert("Download App")}
+            Login
+          </Link>
+          <Link href="https://doach-2adx.vercel.app/signUp"
+            className="block px-3 mt-0 py-3 rounded-md hover:bg-[#FFC32B]/10 cursor-pointer text-sm border-b !border-gray-700 text-left text-white hover:!text-[#FFC32B]"
           >
-            Download the App
-          </div>
-          <div
-            className="block px-3 mt-0 py-3 rounded-md hover:bg-[#FFC32B]/10 cursor-pointer text-sm border-b !border-gray-700"
-            onClick={() => alert("About DOACH")}
+            Create Account
+          </Link>
+          <Link href="#"
+            className="block px-3 mt-0 py-3 rounded-md hover:bg-[#FFC32B]/10 cursor-pointer text-sm border-b !border-gray-700 text-left text-white hover:!text-[#FFC32B]"
           >
-            About DOACH
-          </div>
-          <div
-            className="block px-3 mt-0 py-3 rounded-md hover:bg-[#FFC32B]/10 cursor-pointer text-sm border-b !border-gray-700"
-            onClick={() => alert("About NFTC")}
+            About Doach
+          </Link>
+          <Link href="#"
+            className="block px-3 mt-0 py-3 rounded-md hover:bg-[#FFC32B]/10 cursor-pointer text-sm border-b !border-gray-700 text-left text-white hover:!text-[#FFC32B]"
           >
-            About NFTC
-          </div>
+            Community
+          </Link>
+          <Link href="#"
+            className="block px-3 mt-0 py-3 rounded-md hover:bg-[#FFC32B]/10 cursor-pointer text-sm border-b !border-gray-700 text-left text-white hover:!text-[#FFC32B]"
+          >
+            Events / Contests / Awards
+          </Link>
+          <Link href="#"
+            className="block px-3 mt-0 py-3 rounded-md hover:bg-[#FFC32B]/10 cursor-pointer text-sm border-b !border-gray-700 text-left text-white hover:!text-[#FFC32B]"
+          >
+            Contact/help
+          </Link>
+          <Link href="#"
+            className="block px-3 mt-0 py-3 rounded-md hover:bg-[#FFC32B]/10 cursor-pointer text-sm border-b !border-gray-700 text-left text-white hover:!text-[#FFC32B]"
+          >
+            Privacy & terms
+          </Link>
+          <Link href="#"
+            className="block px-3 mt-0 py-3 rounded-md hover:bg-[#FFC32B]/10 cursor-pointer text-sm border-b !border-gray-700 text-left text-white hover:!text-[#FFC32B]"
+          >
+            download app
+          </Link>
         </div>
       </div>
 
