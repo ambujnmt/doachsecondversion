@@ -1,16 +1,16 @@
 import React from "react";
-import { Poppins } from "next/font/google";
 import { HeroUIProvider } from "@heroui/react";
+import { Manrope as ManropeFont } from "next/font/google"; // rename import
 
-const poppins = Poppins({
+const manrope = ManropeFont({
   subsets: ["latin"],
   weight: ["300", "400", "500", "700"],
-  variable: "--font-poppins",
+  variable: "--font-manrope", // correct variable name
 });
 
 export default function DefaultLayout({ children }) {
   return (
-    <div className={poppins.className}>
+    <div className={manrope.className}>
       <HeroUIProvider>
         <main>{children}</main>
       </HeroUIProvider>

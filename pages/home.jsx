@@ -12,9 +12,9 @@ export default function DashboardPage() {
     // <PrivateRoute>
 
     <div> 
-        <HomeHeader />
+        {/* <HomeHeader /> */}
         <Home />
-        <HomeFooter />
+        {/* <HomeFooter /> */}
     </div>
     // </PrivateRoute>
   );

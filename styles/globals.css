@@ -284,3 +284,34 @@ ul.space-y-1.relative{
 ::placeholder{
   font-size: 13px;
 }
+
+
+.custom-gradient {
+  /* background: linear-gradient(
+    to bottom,
+    #000,  
+    #FFC32B, 
+    #000 
+  ); */
+  background-image: url(https://nmtdevserver.com/doach/Gradient.png);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.swiper-button-prev:after, .swiper-button-next:after{
+  font-size: 19px !important;
+}
+
+.swiper-button-prev:next, .swiper-button-next:next{
+  font-size: 19px !important;
+}
+
+.swiper-button-next {
+  background-color: #ddd;
+}
+
+.swiper-button-prev{
+  background-color: #ddd;
+}
+
