@@ -293,9 +293,9 @@ ul.space-y-1.relative{
     #FFC32B, 
     #000 
   ); */
-  background-image: url(https://nmtdevserver.com/doach/Gradient.png);
+  background-image: url(https://nmtdevserver.com/doach/Gradient3.png);
   background-size: cover;
-  background-position: center;
+  background-position: top;
   background-repeat: no-repeat;
 }
 

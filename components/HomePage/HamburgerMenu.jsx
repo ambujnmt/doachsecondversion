@@ -1,36 +1,21 @@
- 
 import { useState } from "react";
 import { Link } from "@heroui/react";
 
-export default function HamburgerMenu() {
+export default function YellowCircleMenu() {
   const [menuOpen, setMenuOpen] = useState(false);
 
   const toggleMenu = () => setMenuOpen(!menuOpen);
 
   return (
     <>
-      {/* Hamburger Button */}
-      <button
-        onClick={toggleMenu}
-        aria-label="Open menu"
-        className="fixed top-6 right-6 z-50 flex flex-col gap-1.5 w-8 h-8 items-center justify-center cursor-pointer"
-      >
-        <span
-          className={`h-0.5 w-6 bg-[#FFC32B] rounded transition-transform ${
-            menuOpen ? "rotate-45 translate-y-1.5" : ""
-          }`}
+      {/* Yellow Circle Button */}
+      {!menuOpen && (
+        <button
+          onClick={toggleMenu}
+          aria-label="Open menu"
+          className="fixed top-6 right-6 z-50 w-7 h-7 rounded-full bg-[#FFC32B] shadow-lg flex items-center justify-center cursor-pointer"
         />
-        <span
-          className={`h-0.5 w-6 bg-[#FFC32B] rounded transition-opacity ${
-            menuOpen ? "opacity-0" : ""
-          }`}
-        />
-        <span
-          className={`h-0.5 w-6 bg-[#FFC32B] rounded transition-transform ${
-            menuOpen ? "-rotate-45 -translate-y-1.5" : ""
-          }`}
-        />
-      </button>
+      )}
 
       {/* Full-Screen Slide Menu */}
       <div
@@ -38,47 +23,81 @@ export default function HamburgerMenu() {
           menuOpen ? "translate-x-0" : "translate-x-full"
         }`}
       >
-        <div className="p-6 space-y-6">
-          {/* <h2 className="text-lg font-bold text-[#FFC32B]">Menu</h2> */}
-          <Link href="/login"
-            className="block px-3 py-3 rounded-md hover:bg-[#FFC32B]/10 cursor-pointer text-sm border-b !border-gray-700 mt-5 text-left text-white hover:!text-[#FFC32B]"
+        {/* Close Button */}
+        <button
+          onClick={toggleMenu}
+          aria-label="Close menu"
+          className="absolute top-6 right-6 text-white text-2xl font-bold"
+        >
+          ✕
+        </button>
+
+        <div className="space-y-6">
+          <Link
+            href="/login"
+            className="block px-3 py-3 rounded-md hover:bg-[#FFC32B]/10 cursor-pointer text-sm border-b !border-gray-700 mt-5 text-left text-white hover:!text-[#FFC32B] leading-[15px]"
           >
             Login
           </Link>
-          <Link href="/signUp"
-            className="block px-3 mt-0 py-3 rounded-md hover:bg-[#FFC32B]/10 cursor-pointer text-sm border-b !border-gray-700 text-left text-white hover:!text-[#FFC32B]"
+          <Link
+            href="/signUp"
+            className="block px-3 mt-0 py-3 rounded-md hover:bg-[#FFC32B]/10 cursor-pointer text-sm border-b !border-gray-700 text-left text-white hover:!text-[#FFC32B] leading-[15px]"
           >
             Create Account
           </Link>
-          <Link href="/aboutUs"
-            className="block px-3 mt-0 py-3 rounded-md hover:bg-[#FFC32B]/10 cursor-pointer text-sm border-b !border-gray-700 text-left text-white hover:!text-[#FFC32B]"
+          <Link
+            href="/aboutUs"
+            className="block px-3 mt-0 py-3 rounded-md hover:bg-[#FFC32B]/10 cursor-pointer text-sm border-b !border-gray-700 text-left text-white hover:!text-[#FFC32B] leading-[15px]"
           >
             About Doach
           </Link>
-          <Link href="/community"
-            className="block px-3 mt-0 py-3 rounded-md hover:bg-[#FFC32B]/10 cursor-pointer text-sm border-b !border-gray-700 text-left text-white hover:!text-[#FFC32B]"
+          <Link
+            href="/community"
+            className="block px-3 mt-0 py-3 rounded-md hover:bg-[#FFC32B]/10 cursor-pointer text-sm border-b !border-gray-700 text-left text-white hover:!text-[#FFC32B] leading-[15px]"
           >
             Community
           </Link>
-          <Link href="#"
-            className="block px-3 mt-0 py-3 rounded-md hover:bg-[#FFC32B]/10 cursor-pointer text-sm border-b !border-gray-700 text-left text-white hover:!text-[#FFC32B]"
+          <Link
+            href="/event"
+            className="block px-3 mt-0 py-3 rounded-md hover:bg-[#FFC32B]/10 cursor-pointer text-sm border-b !border-gray-700 text-left text-white hover:!text-[#FFC32B] leading-[15px]"
           >
             Events / Contests / Awards
           </Link>
-          <Link href="#"
-            className="block px-3 mt-0 py-3 rounded-md hover:bg-[#FFC32B]/10 cursor-pointer text-sm border-b !border-gray-700 text-left text-white hover:!text-[#FFC32B]"
+          <Link
+            href="contactUs"
+            className="block px-3 mt-0 py-3 rounded-md hover:bg-[#FFC32B]/10 cursor-pointer text-sm border-b !border-gray-700 text-left text-white hover:!text-[#FFC32B] leading-[15px]"
           >
-            Contact/help
+            Contact / Help
           </Link>
-          <Link href="#"
-            className="block px-3 mt-0 py-3 rounded-md hover:bg-[#FFC32B]/10 cursor-pointer text-sm border-b !border-gray-700 text-left text-white hover:!text-[#FFC32B]"
+          <Link
+            href="privacyPolicy"
+            className="block px-3 mt-0 py-3 rounded-md hover:bg-[#FFC32B]/10 cursor-pointer text-sm border-b !border-gray-700 text-left text-white hover:!text-[#FFC32B] leading-[15px]"
           >
-            Privacy & terms
+            Privacy & Terms
           </Link>
-          <Link href="#"
-            className="block px-3 mt-0 py-3 rounded-md hover:bg-[#FFC32B]/10 cursor-pointer text-sm border-b !border-gray-700 text-left text-white hover:!text-[#FFC32B]"
+          <Link
+            href="#"
+            className="block px-3 mt-0 py-3 rounded-md hover:bg-[#FFC32B]/10 cursor-pointer text-sm border-b !border-gray-700 text-left text-white hover:!text-[#FFC32B] leading-[15px]"
           >
-            download app
+            Download App
+          </Link>
+          <Link
+            href="#"
+            className="block px-3 mt-0 py-3 rounded-md hover:bg-[#FFC32B]/10 cursor-pointer text-sm border-b !border-gray-700 text-left text-white hover:!text-[#FFC32B] leading-[15px]"
+          >
+            Sessions
+          </Link>
+          <Link
+            href="#"
+            className="block px-3 mt-0 py-3 rounded-md hover:bg-[#FFC32B]/10 cursor-pointer text-sm border-b !border-gray-700 text-left text-white hover:!text-[#FFC32B] leading-[15px]"
+          >
+            MyDoach
+          </Link>
+          <Link
+            href="#"
+            className="block px-3 mt-0 py-3 rounded-md hover:bg-[#FFC32B]/10 cursor-pointer text-sm border-b !border-gray-700 text-left text-white hover:!text-[#FFC32B] leading-[15px]"
+          >
+            Onboarding
           </Link>
         </div>
       </div>
