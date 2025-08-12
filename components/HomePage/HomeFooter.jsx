@@ -13,25 +13,25 @@ export default function HomeFooter() {
                 <div className="flex flex-col md:flex-row justify-between xl:items-center gap-6">
                     <div className="text-left">
                     <div className="text-2xl font-extrabold text-yellow-400">
-                        <img src="https://nmtdevserver.com/doach/logo.png" alt="image" className='w-[40%] h-auto mb-3' />
+                        <img src="https://nmtdevserver.com/doach/black-logo.png" alt="image" className='w-[40%] h-auto mb-3' />
                     </div>
                     <div className="text-black">DOACH Inc.</div>
                     <div className="text-black">Delaware C-Corp</div>
                     <div className="text-black">team@doach.ai</div>
                     </div>
 
-                    <div className="flex items-center gap-4">
-                    <a className="w-10 h-10 rounded-full bg-white flex items-center justify-center hover:!bg-yellow-400 transition duration-300" href="#" aria-label="Instagram">
-                        <FaInstagram className='text-black' />
+                    <div className="flex items-center gap-3">
+                    <a className="w-10 h-10 rounded-full flex items-center justify-center hover:!bg-yellow-400 transition duration-300" href="#" aria-label="Instagram">
+                        <FaInstagram className='text-black text-[20px]' />
                     </a>
-                    <a className="w-10 h-10 rounded-full bg-white flex items-center justify-center hover:!bg-yellow-400 transition duration-300" href="#" aria-label="TikTok">
-                        <FaTiktok className='text-black' />
+                    <a className="w-10 h-10 rounded-full flex items-center justify-center hover:!bg-yellow-400 transition duration-300" href="#" aria-label="TikTok">
+                        <FaTiktok className='text-black text-[20px]' />
                     </a>
-                    <a className="w-10 h-10 rounded-full bg-white flex items-center justify-center hover:!bg-yellow-400 transition duration-300" href="#" aria-label="YouTube">
-                        <FaYoutube className='text-black' />
+                    <a className="w-10 h-10 rounded-full flex items-center justify-center hover:!bg-yellow-400 transition duration-300" href="#" aria-label="YouTube">
+                        <FaYoutube className='text-black text-[20px]' />
                     </a>
-                    <a className="w-10 h-10 rounded-full bg-white flex items-center justify-center hover:!bg-yellow-400 transition duration-300" href="#" aria-label="X">
-                        <FaXTwitter className='text-black' />
+                    <a className="w-10 h-10 rounded-full flex items-center justify-center hover:!bg-yellow-400 transition duration-300" href="#" aria-label="X">
+                        <FaXTwitter className='text-black text-[20px]' />
                     </a>
                     </div>
                 </div>

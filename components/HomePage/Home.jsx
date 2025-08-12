@@ -124,7 +124,7 @@ export default function Home() {
                 aria-label="Hero"
                 style={{
                     fontFamily: "'Manrope', sans-serif",
-                    backgroundImage: "url('https://nmtdevserver.com/doach/hero-img4.png')",
+                    backgroundImage: "url('https://nmtdevserver.com/doach/hero-img5.jpg')",
                     backgroundSize: "cover",
                     backgroundPosition: "center"
                 }}
@@ -139,8 +139,8 @@ export default function Home() {
 
                 {/* Hero content */}
                 <div className="relative z-20 px-6 max-w-3xl hero-content"> 
-                <img src="https://nmtdevserver.com/doach/logo.png" alt="image" className="w-[60%] h-auto block m-auto" />
-                <p className="mt-6 text-lg md:text-xl text-white/90 max-w-2xl mx-auto">The AI Coach That Adapts to You</p>
+                  <img src="https://nmtdevserver.com/doach/logo.png" alt="image" className="w-[60%] h-auto block m-auto" />
+                  <p className="mt-6 text-lg md:text-xl text-white/90 max-w-2xl mx-auto">The AI Coach That Adapts to You</p>
                 </div>
 
                 {/* Scroll arrow */}
@@ -162,13 +162,13 @@ export default function Home() {
                 <section id="nftc" className="py-24">
                     <Container maxWidth="lg">
                     <div className="text-center px-4">
-                        <h2 className="text-3xl md:text-5xl font-bold text-[#FFC32B] mb-4">DOACH × CAVS</h2>
-                        <p className="text-lg text-white mb-6">National Free Throw Challenge</p>
-                        <p className="mx-auto text-white/80 max-w-3xl mb-12">
-                        DOACH is the AI-powered coaching platform that personalizes your training experience. Through advanced
-                        analytics and real-time feedback, DOACH adapts to your unique playing style, helping you reach peak
-                        performance faster than ever before.
-                        </p>
+                        <h2 className="text-3xl md:text-5xl font-black text-[#fff] mb-4">DOACH</h2>
+                        <p className="text-[15px] text-white mb-6">Is the first AI sports assistant built to train, teach, and adapt to every athlete—anytime, anywhere. It delivers real-time feedback, biomechanical insights, and lifelike coaching through voice, video, and sensor data.</p>
+                        
+                        <h2 className="text-3xl md:text-5xl font-black text-[#fff] mb-3 mt-5">DOACH + CAVS</h2>
+                        <h5 className="text-[25px] text-white font-medium mb-2">National Free Throw Challenge (NFTC)</h5>
+                        <h5 className="text-[25px] text-white font-medium mb-3">October 17-23, 2025</h5>
+                        <p className="text-[15px] text-white mb-6">Is a first-of-its-kind, AI-powered youth sports event connecting players across Ohio, Pennsylvania, and New York. Competitors will shoot, track, and improve in real time while vying for regional bragging rights.</p>
 
                         {/* <div className="grid gap-8 grid-cols-1 md:grid-cols-3">
                             <div className="event-card bg-white/5 p-6 rounded-2xl border border-[#FFC32B]/20 hover:translate-y-[-6px] transition-transform reveal-item">
@@ -214,35 +214,35 @@ export default function Home() {
                 {/* Partners section */}
                 <section className="py-16">
                     <Container maxWidth="lg">
-                    <h3 className="text-3xl text-center font-bold text-white mb-8">NFTC Founding Brand Partners</h3>
+                    <h3 className="text-3xl text-center font-bold text-black mb-8">NFTC Founding Brand Partners</h3>
 
                         <div className="overflow-hidden">
                             <div className="flex items-center gap-10 animate-marquee">
                                 {/* First loop */} 
-                                <div className="min-w-[150px] h-14 object-cover bg-white rounded-md flex items-center justify-center">
+                                <div className="min-w-[150px] h-14 object-cover rounded-md flex items-center justify-center">
                                     <img src="https://upload.wikimedia.org/wikipedia/commons/2/24/Adidas_logo.png" alt="ADIDAS" className="h-10 object-contain" />
                                 </div>
-                                <div className="min-w-[150px] h-14 object-cover bg-white rounded-md flex items-center justify-center">
+                                <div className="min-w-[150px] h-14 object-cover rounded-md flex items-center justify-center">
                                     <img src="https://logos-world.net/wp-content/uploads/2020/04/Nike-Logo.png" alt="NIKE" className="h-10 object-contain" />
                                 </div>
-                                <div className="min-w-[150px] h-14 object-cover bg-white rounded-md flex items-center justify-center">
+                                <div className="min-w-[150px] h-14 object-cover rounded-md flex items-center justify-center">
                                     <img src="https://cdn-icons-png.flaticon.com/512/15/15476.png" alt="APPLE" className="h-10 object-contain" />
                                 </div>
-                                <div className="min-w-[150px] h-14 object-cover bg-white rounded-md flex items-center justify-center">
+                                <div className="min-w-[150px] h-14 object-cover rounded-md flex items-center justify-center">
                                     <img src="https://www.iconpacks.net/icons/1/free-youtube-icon-123-thumb.png" alt="YOUTUBE" className="h-10 object-contain" />
                                 </div> 
                                 
                                 {/* Duplicate loop for seamless scroll */}
-                                <div className="min-w-[150px] h-14 object-cover bg-white rounded-md flex items-center justify-center">
+                                <div className="min-w-[150px] h-14 object-cover rounded-md flex items-center justify-center">
                                     <img src="https://upload.wikimedia.org/wikipedia/commons/2/24/Adidas_logo.png" alt="ADIDAS" className="h-10 object-contain" />
                                 </div>
-                                <div className="min-w-[150px] h-14 object-cover bg-white rounded-md flex items-center justify-center">
+                                <div className="min-w-[150px] h-14 object-cover rounded-md flex items-center justify-center">
                                     <img src="https://logos-world.net/wp-content/uploads/2020/04/Nike-Logo.png" alt="NIKE" className="h-10 object-contain" />
                                 </div>
-                                <div className="min-w-[150px] h-14 object-cover bg-white rounded-md flex items-center justify-center">
+                                <div className="min-w-[150px] h-14 object-cover rounded-md flex items-center justify-center">
                                     <img src="https://cdn-icons-png.flaticon.com/512/15/15476.png" alt="APPLE" className="h-10 object-contain" />
                                 </div>
-                                <div className="min-w-[150px] h-14 object-cover bg-white rounded-md flex items-center justify-center">
+                                <div className="min-w-[150px] h-14 object-cover rounded-md flex items-center justify-center">
                                     <img src="https://www.iconpacks.net/icons/1/free-youtube-icon-123-thumb.png" alt="YOUTUBE" className="h-10 object-contain" />
                                 </div> 
                             </div>
