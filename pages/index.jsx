@@ -2,6 +2,7 @@ import React, { useEffect } from 'react'
 import Main from '@/components/Main/Main'
 import { useRouter } from 'next/router';
 import { useUser } from '../context/UserContext';
+import Home from '../components/HomePage/Home';
 
 export default function index() {
   const { user } = useUser(); 
@@ -16,7 +17,8 @@ export default function index() {
 
   return (
     <div>
-      {!user &&<Main/>}
+      {/* {!user &&<Main/>} */}
+      {!user &&<Home />}
     </div>
   )
 }

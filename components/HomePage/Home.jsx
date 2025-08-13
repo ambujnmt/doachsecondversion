@@ -139,8 +139,10 @@ export default function Home() {
 
                 {/* Hero content */}
                 <div className="relative z-20 px-6 max-w-3xl hero-content"> 
-                  <img src="https://nmtdevserver.com/doach/logo.png" alt="image" className="w-[60%] h-auto block m-auto" />
-                  <p className="mt-6 text-lg md:text-xl text-white/90 max-w-2xl mx-auto">The AI Coach That Adapts to You</p>
+                  <Link href="/">
+                    <img src="https://nmtdevserver.com/doach/logo.png" alt="image" className="w-[500px] h-auto block m-auto" />
+                  </Link>
+                  <p className="mt-[50px] text-lg md:text-xl text-black max-w-md mx-auto border !border-[#FFC32B] p-2 bg-[#FFC32B] rounded-full">The AI Coach That Adapts to You</p>
                 </div>
 
                 {/* Scroll arrow */}
