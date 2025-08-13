@@ -12,12 +12,16 @@ export default function HomeFooter() {
                 <Container maxWidth="lg">
                 <div className="flex flex-col md:flex-row justify-between xl:items-center gap-6">
                     <div className="text-left">
-                    <div className="text-2xl font-extrabold text-yellow-400">
-                        <img src="https://nmtdevserver.com/doach/black-logo.png" alt="image" className='w-[40%] h-auto mb-3' />
-                    </div>
-                    <div className="text-black">DOACH Inc.</div>
-                    <div className="text-black">Delaware C-Corp</div>
-                    <div className="text-black">team@doach.ai</div>
+                        <div className="text-2xl font-extrabold text-yellow-400">
+                            <img src="https://nmtdevserver.com/doach/black-logo.png" alt="image" className='w-[40%] h-auto mb-3' />
+                        </div>
+                        <div className="text-black">DOACH Inc.</div>
+                        <div className="text-black">Delaware C-Corp</div>
+                        <div className="text-black">team@doach.ai</div>
+                        <div className="mt-3">
+                            <Link href="/privacyPolicy" className='text-[14px] underline'> Privacy policy </Link> &nbsp;&nbsp;
+                            <Link href="#" className='text-[14px] underline'> Terms of service </Link>
+                        </div>
                     </div>
 
                     <div className="flex items-center gap-3">

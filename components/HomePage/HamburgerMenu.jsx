@@ -45,12 +45,12 @@ export default function YellowCircleMenu() {
           >
             Create Account
           </Link>
-          <Link
+          {/* <Link
             href="/aboutUs"
             className="block px-3 mt-0 py-3 rounded-md hover:bg-[#FFC32B]/10 cursor-pointer text-sm border-b !border-gray-700 text-left text-white hover:!text-[#FFC32B] leading-[15px]"
           >
             About Doach
-          </Link>
+          </Link> */}
           <Link
             href="/community"
             className="block px-3 mt-0 py-3 rounded-md hover:bg-[#FFC32B]/10 cursor-pointer text-sm border-b !border-gray-700 text-left text-white hover:!text-[#FFC32B] leading-[15px]"
@@ -94,7 +94,7 @@ export default function YellowCircleMenu() {
             MyDoach
           </Link>
           <Link
-            href="#"
+            href="/onboarding"
             className="block px-3 mt-0 py-3 rounded-md hover:bg-[#FFC32B]/10 cursor-pointer text-sm border-b !border-gray-700 text-left text-white hover:!text-[#FFC32B] leading-[15px]"
           >
             Onboarding

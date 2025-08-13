@@ -3,7 +3,9 @@ import React from 'react';
 import HamburgerMenu from '../HomePage/HamburgerMenu';
 import HomeFooter from '../HomePage/HomeFooter';
 import Container from "@mui/material/Container";
-
+import { MdOutlineDateRange } from "react-icons/md";
+import { MdAccessTime } from "react-icons/md";
+import { IoLocationOutline } from "react-icons/io5";
 
 
 export default function Event() {
@@ -30,12 +32,15 @@ export default function Event() {
                                         />
 
                                         {/* Dark Overlay */}
-                                        <div className="absolute inset-0 bg-gray-800 bg-opacity-40"></div>
+                                        <div className="absolute inset-0 bg-[#000] bg-opacity-60"></div>
 
                                         {/* Text */}
-                                        <div className="absolute top-[40%] left-3">
+                                        <div className="absolute top-[20%] left-3">
                                             <h4 className='text-white font-semibold text-[28px] mb-2 leading-tight'>FIFA World Cup</h4>
-                                            <p className='text-white text-[16px] leading-tight'> 14 Aug 2025 </p>
+                                            <p className='text-white text-[16px] leading-tight mb-2 flex items-center'><MdOutlineDateRange />&nbsp; 14 Aug 2025 </p>
+                                            <p className='text-white text-[16px] leading-tight capitalize mb-2 flex items-center'><MdAccessTime />&nbsp; 11:30AM </p>
+                                            <p className='text-white text-[16px] leading-tight capitalize mb-3 flex items-center'><IoLocationOutline />&nbsp; indira gandhi stadium delhi </p>
+                                            <button type='button' className='bg-[#FFC32B] text-black p-2 px-3 rounded-lg font-semibold hover:bg-[#000] hover:!text-white duration-300 capitalize'>register</button>
                                         </div>
                                     </div>
                                 </div>
@@ -48,12 +53,15 @@ export default function Event() {
                                         />
 
                                         {/* Dark Overlay */}
-                                        <div className="absolute inset-0 bg-gray-800 bg-opacity-40"></div>
+                                        <div className="absolute inset-0 bg-[#000] bg-opacity-60"></div>
 
                                         {/* Text */}
-                                        <div className="absolute top-[40%] left-3">
+                                        <div className="absolute top-[20%] left-3">
                                             <h4 className='text-white font-semibold text-[28px] mb-2 leading-tight'>FIFA World Cup</h4>
-                                            <p className='text-white text-[16px] leading-tight'> 14 Aug 2025 </p>
+                                            <p className='text-white text-[16px] leading-tight mb-2 flex items-center'><MdOutlineDateRange />&nbsp; 14 Aug 2025 </p>
+                                            <p className='text-white text-[16px] leading-tight capitalize mb-2 flex items-center'><MdAccessTime />&nbsp; 11:30AM </p>
+                                            <p className='text-white text-[16px] leading-tight capitalize mb-3 flex items-center'><IoLocationOutline />&nbsp; indira gandhi stadium delhi </p>
+                                            <button type='button' className='bg-[#FFC32B] text-black p-2 px-3 rounded-lg font-semibold hover:bg-[#000] hover:!text-white duration-300 capitalize'>register</button>
                                         </div>
                                     </div>
                                 </div> 
@@ -67,12 +75,15 @@ export default function Event() {
                                         />
 
                                         {/* Dark Overlay */}
-                                        <div className="absolute inset-0 bg-gray-800 bg-opacity-40"></div>
+                                        <div className="absolute inset-0 bg-[#000] bg-opacity-60"></div>
 
                                         {/* Text */}
-                                        <div className="absolute top-[40%] left-3">
+                                        <div className="absolute top-[20%] left-3">
                                             <h4 className='text-white font-semibold text-[28px] mb-2 leading-tight'>FIFA World Cup</h4>
-                                            <p className='text-white text-[16px] leading-tight'> 14 Aug 2025 </p>
+                                            <p className='text-white text-[16px] leading-tight mb-2 flex items-center'><MdOutlineDateRange />&nbsp; 14 Aug 2025 </p>
+                                            <p className='text-white text-[16px] leading-tight capitalize mb-2 flex items-center'><MdAccessTime />&nbsp; 11:30AM </p>
+                                            <p className='text-white text-[16px] leading-tight capitalize mb-3 flex items-center'><IoLocationOutline />&nbsp; indira gandhi stadium delhi </p>
+                                            <button type='button' className='bg-[#FFC32B] text-black p-2 px-3 rounded-lg font-semibold hover:bg-[#000] hover:!text-white duration-300 capitalize'>register</button>
                                         </div>
                                     </div>
                                 </div> 
