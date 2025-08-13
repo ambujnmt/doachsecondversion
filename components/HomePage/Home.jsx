@@ -142,7 +142,7 @@ export default function Home() {
                   <Link href="/">
                     <img src="https://nmtdevserver.com/doach/logo.png" alt="image" className="w-[500px] h-auto block m-auto" />
                   </Link>
-                  <p className="mt-[50px] text-lg md:text-xl text-black max-w-md mx-auto border !border-[#FFC32B] p-2 bg-[#FFC32B] rounded-full">The AI Coach That Adapts to You</p>
+                  <p className="mt-[50px] text-lg md:text-xl text-black max-w-md mx-auto !border-[#FFC32B] p-2 bg-[#FFC32B] rounded-full">The AI Coach That Adapts to You</p>
                 </div>
 
                 {/* Scroll arrow */}

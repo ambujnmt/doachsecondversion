@@ -19,8 +19,8 @@ export default function HomeFooter() {
                         <div className="text-black">Delaware C-Corp</div>
                         <div className="text-black">team@doach.ai</div>
                         <div className="mt-3">
-                            <Link href="/privacyPolicy" className='text-[14px] underline'> Privacy policy </Link> &nbsp;&nbsp;
-                            <Link href="#" className='text-[14px] underline'> Terms of service </Link>
+                            <Link href="/privacyPolicy" className='text-[14px] underline text-black'> Privacy policy </Link> &nbsp;&nbsp;
+                            <Link href="#" className='text-[14px] underline text-black'> Terms of service </Link>
                         </div>
                     </div>
 
