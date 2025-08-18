@@ -18,11 +18,13 @@ export default function Onboarding() {
                 <Container maxWidth="sm" className="flex-grow flex flex-col items-center justify-center px-6 py-10 space-y-8">
                     
                     {/* Logo */}
-                    <img
-                        src="https://nmtdevserver.com/doach/logo.png"
-                        alt="DOACH Logo"
-                        className="w-[40%] mx-auto"
-                    />
+                    <Link href='/'>
+                        <img
+                            src="https://nmtdevserver.com/doach/logo.png"
+                            alt="DOACH Logo"
+                            className="w-[40%] mx-auto"
+                        />
+                    </Link>
 
                     {!showForm && (
                         <>
