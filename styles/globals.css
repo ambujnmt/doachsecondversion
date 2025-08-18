@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -315,3 +318,33 @@ ul.space-y-1.relative{
   background-color: #ddd;
 }
 
+
+
+/* Founding Brand Partners logo section css */
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(calc(-250px * 7));
+  }
+}
+.slider {
+  height: 100px;
+  margin: auto;
+  overflow: hidden;
+  position: relative;
+  width: auto; 
+}
+.slider .slide-track {
+  animation: scroll 40s linear infinite;
+  display: flex;
+  width: calc(150px * 14);
+}
+.slider .slide {
+  height: 100px;
+  width: 250px;
+  display: flex;
+  align-items: center;
+}
+/* // Founding Brand Partners logo section css */

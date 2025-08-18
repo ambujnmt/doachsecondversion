@@ -2,8 +2,12 @@ import React, { useEffect, useState, useRef } from "react";
 import Container from "@mui/material/Container";
 import { Link } from "@heroui/react";
 import HamburgerMenu from "./HamburgerMenu";
-import HomeFooter from "./HomeFooter";
-import StateSlider from "./StateSlider";
+import HomeFooter from "./HomeFooter"; 
+import { AiOutlinePlus } from "react-icons/ai"; 
+import CountdownTimer from "../CountdownTimer/CountdownTimer";
+import PartnersSlider from "./PartnersSlider";
+
+
 
 export default function Home() {
   const [voiceOpen, setVoiceOpen] = useState(false);
@@ -131,7 +135,7 @@ export default function Home() {
             >
 
                 {/* Overlay */}
-                <div div className="absolute inset-0 bg-black bg-opacity-50"></div>
+                {/* <div div className="absolute inset-0 bg-black bg-opacity-50"></div> */}
 
                 {/* Hamburger Menu */}
                 <HamburgerMenu />
@@ -142,7 +146,7 @@ export default function Home() {
                   <Link href="/">
                     <img src="https://nmtdevserver.com/doach/logo.png" alt="image" className="w-[500px] h-auto block m-auto" />
                   </Link>
-                  <p className="mt-[50px] text-lg md:text-xl text-black max-w-md mx-auto !border-[#FFC32B] p-2 bg-[#FFC32B] rounded-full">The AI Coach That Adapts to You</p>
+                  <p className="mt-[50px] text-[13px] xl:text-lg md:text-xl text-black max-w-md mx-auto !border-[#FFC32B] p-2 bg-[#FFC32B] rounded-full">The AI Coach That Adapts to You</p>
                 </div>
 
                 {/* Scroll arrow */}
@@ -163,97 +167,187 @@ export default function Home() {
                 {/* DOACH × CAVS Section */}
                 <section id="nftc" className="py-24">
                     <Container maxWidth="lg">
-                    <div className="text-center px-4">
-                        <h2 className="text-3xl md:text-5xl font-black text-[#fff] mb-4">DOACH</h2>
-                        <p className="text-[15px] text-white mb-6">Is the first AI sports assistant built to train, teach, and adapt to every athlete—anytime, anywhere. It delivers real-time feedback, biomechanical insights, and lifelike coaching through voice, video, and sensor data.</p>
-                        
-                        <h2 className="text-3xl md:text-5xl font-black text-[#fff] mb-3 mt-5">DOACH + CAVS</h2>
-                        <h5 className="text-[25px] text-white font-medium mb-2">National Free Throw Challenge (NFTC)</h5>
-                        <h5 className="text-[25px] text-white font-medium mb-3">October 17-23, 2025</h5>
-                        <p className="text-[15px] text-white mb-6">Is a first-of-its-kind, AI-powered youth sports event connecting players across Ohio, Pennsylvania, and New York. Competitors will shoot, track, and improve in real time while vying for regional bragging rights.</p>
+                      <div className="text-center px-4">
+                        <div className="grid text-center xl:flex lg:flex md:flex items-center justify-center mb-5">
+                          <img src="https://nmtdevserver.com/doach/logo.png" alt="image" className="w-[300px]   h-auto" />
+                          <AiOutlinePlus className="text-white text-[50px] font-bold mx-3 invisible xl:!visible lg:!visible md:!visible" />
+                          <img src="https://nmtdevserver.com/doach/cavs-logo.png" alt="image" className="w-[170px] h-auto block m-auto xl:!m-0 lg:!m-0" />
+                          <h4 className="text-white text-[22px] xl:!text-left lg:!text-left md:!text-left text-center ml-5 capitalize font-thin leading-[20px] mt-5 md:!mt-0" style={{ fontFamily: "Bebas Neue, sans-serif;" }}> National <br /> free throw <br /> challenge  <br /> OCT 17 • 23 2025 </h4>
+                        </div>
 
-                        {/* <div className="grid gap-8 grid-cols-1 md:grid-cols-3">
-                            <div className="event-card bg-white/5 p-6 rounded-2xl border border-[#FFC32B]/20 hover:translate-y-[-6px] transition-transform reveal-item">
-                                <div className="text-[#FFC32B] font-semibold mb-2">October 17-23, 2025</div>
-                                <div className="text-xl font-semibold mb-2">NFTC Championship</div>
-                                <div className="text-white/75">Join athletes nationwide in the ultimate flag touch challenge with real-time AI coaching.</div>
-                            </div>
 
-                            <div className="event-card bg-white/5 p-6 rounded-2xl border border-[#FFC32B]/20 hover:translate-y-[-6px] transition-transform reveal-item">
-                                <div className="text-[#FFC32B] font-semibold mb-2">Multi-State Event</div>
-                                <div className="text-xl font-semibold mb-2">Find Your Location</div>
-                                <div className="text-white/75">Participating venues across the country. Find the nearest location and register.</div>
-                            </div>
-
-                            <div className="event-card bg-white/5 p-6 rounded-2xl border border-[#FFC32B]/20 hover:translate-y-[-6px] transition-transform reveal-item">
-                                <div className="text-[#FFC32B] font-semibold mb-2">Powered by AI</div>
-                                <div className="text-xl font-semibold mb-2">Smart Coaching</div>
-                                <div className="text-white/75">Experience personalized feedback and adaptive coaching methodology powered by DOACH.</div>
-                            </div>
-                        </div> */}
+                        {/* Counter section here */}
+                        <CountdownTimer />
+                        {/* // Counter section here */}
 
                         <div className="mt-12">
-                        <button
-                            onClick={openSignupModal}
-                            className="px-8 py-3 bg-[#FFC32B] text-black rounded-full font-semibold shadow-md hover:bg-yellow-300 transition"
-                        >
-                            Sign Up for NFTC
-                        </button>
+                          <button
+                              onClick={openSignupModal}
+                              className="px-8 py-[12px] bg-[#FFC32B] text-black rounded-full font-semibold shadow-md hover:bg-yellow-300 transition"
+                          >
+                              Sign Up for Challenge
+                          </button>
                         </div>
-                    </div>
+
+
+                        {/* Partners section */} 
+                        <PartnersSlider /> 
+                        {/* // Partners section */} 
+ 
+                      </div>
                     </Container>
                 </section>
                 {/* // DOACH × CAVS Section */}
 
 
-
-                {/* Find Your NFTC Location Section */}
-                <StateSlider />
-                {/* // Find Your NFTC Location Section */}
-
-
-
-                {/* Partners section */}
-                <section className="py-16">
-                    <Container maxWidth="lg">
-                    <h3 className="text-3xl text-center font-bold text-black mb-8">NFTC Founding Brand Partners</h3>
-
-                        <div className="overflow-hidden">
-                            <div className="flex items-center gap-10 animate-marquee">
-                                {/* First loop */} 
-                                <div className="min-w-[150px] h-14 object-cover rounded-md flex items-center justify-center">
-                                    <img src="https://upload.wikimedia.org/wikipedia/commons/2/24/Adidas_logo.png" alt="ADIDAS" className="h-10 object-contain" />
-                                </div>
-                                <div className="min-w-[150px] h-14 object-cover rounded-md flex items-center justify-center">
-                                    <img src="https://logos-world.net/wp-content/uploads/2020/04/Nike-Logo.png" alt="NIKE" className="h-10 object-contain" />
-                                </div>
-                                <div className="min-w-[150px] h-14 object-cover rounded-md flex items-center justify-center">
-                                    <img src="https://cdn-icons-png.flaticon.com/512/15/15476.png" alt="APPLE" className="h-10 object-contain" />
-                                </div>
-                                <div className="min-w-[150px] h-14 object-cover rounded-md flex items-center justify-center">
-                                    <img src="https://www.iconpacks.net/icons/1/free-youtube-icon-123-thumb.png" alt="YOUTUBE" className="h-10 object-contain" />
-                                </div> 
-                                
-                                {/* Duplicate loop for seamless scroll */}
-                                <div className="min-w-[150px] h-14 object-cover rounded-md flex items-center justify-center">
-                                    <img src="https://upload.wikimedia.org/wikipedia/commons/2/24/Adidas_logo.png" alt="ADIDAS" className="h-10 object-contain" />
-                                </div>
-                                <div className="min-w-[150px] h-14 object-cover rounded-md flex items-center justify-center">
-                                    <img src="https://logos-world.net/wp-content/uploads/2020/04/Nike-Logo.png" alt="NIKE" className="h-10 object-contain" />
-                                </div>
-                                <div className="min-w-[150px] h-14 object-cover rounded-md flex items-center justify-center">
-                                    <img src="https://cdn-icons-png.flaticon.com/512/15/15476.png" alt="APPLE" className="h-10 object-contain" />
-                                </div>
-                                <div className="min-w-[150px] h-14 object-cover rounded-md flex items-center justify-center">
-                                    <img src="https://www.iconpacks.net/icons/1/free-youtube-icon-123-thumb.png" alt="YOUTUBE" className="h-10 object-contain" />
-                                </div> 
-                            </div>
+                {/* Events section */}
+                <section className="event-sec">
+                  <Container>
+                    <div className="grid grid-cols-12 gap-4">
+                      <div className="col-span-12">
+                        <h4 className="text-white text-[22px] font-bold">Events</h4>
+                      </div>
+                      <div className="col-span-12 xl:col-span-4 md:col-span-6 lg:col-span-4">
+                        <div className="bg-[#FFC32B] rounded-3xl">
+                          <img src="https://columbusregion.com/wp-content/uploads/2022/08/Homepage_HERO-2.jpg" alt="image" className="w-full h-[250px] object-cover rounded-tl-3xl rounded-tr-3xl" />
+                          <div className="p-3">
+                            <h5 className="text-black text-[18px] font-semibold mb-1">Cleveland YMCA</h5>
+                            <p className="text-[14px] font-medium text-black mb-1">08.13.25</p>
+                            <p className="overflow-hidden text-ellipsis [display:-webkit-box] [-webkit-line-clamp:2] [-webkit-box-orient:vertical] text-[14px] font-medium mb-2 text-black">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Rerum eum, voluptatem quae id laboriosam iure repellat perferendis aspernatur corrupti. Nesciunt at reiciendis natus labore assumenda nulla impedit accusantium quidem quam.</p>
+                            <Link href="#" className="flex justify-end text-[14px] font-medium text-black">2 min. read</Link>
+                          </div>
                         </div>
-
-                    </Container>
+                      </div>
+                      <div className="col-span-12 xl:col-span-4 md:col-span-6 lg:col-span-4">
+                        <div className="bg-[#FFC32B] rounded-3xl">
+                          <img src="https://kommwirmachendaseinfach.de/wp-content/uploads/2019/07/highlights-singapur-marina-bay-sands-hotel.jpg" alt="image" className="w-full h-[250px] object-cover rounded-tl-3xl rounded-tr-3xl" />
+                          <div className="p-3">
+                            <h5 className="text-black text-[18px] font-semibold mb-1">Pittsburgh YMCA</h5>
+                            <p className="text-[14px] font-medium text-black mb-1">08.13.25</p>
+                            <p className="overflow-hidden text-ellipsis [display:-webkit-box] [-webkit-line-clamp:2] [-webkit-box-orient:vertical] text-[14px] font-medium mb-2 text-black">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Rerum eum, voluptatem quae id laboriosam iure repellat perferendis aspernatur corrupti. Nesciunt at reiciendis natus labore assumenda nulla impedit accusantium quidem quam.</p>
+                            <Link href="#" className="flex justify-end text-[14px] font-medium text-black">2 min. read</Link>
+                          </div>
+                        </div>
+                      </div>
+                      <div className="col-span-12 xl:col-span-4 md:col-span-6 lg:col-span-4">
+                        <div className="bg-[#FFC32B] rounded-3xl">
+                          <img src="https://assets.bwbx.io/images/users/iqjWHBFdfxIU/iZDshdZpXIHI/v0/-1x-1.webp" alt="image" className="w-full h-[250px] object-cover rounded-tl-3xl rounded-tr-3xl" />
+                          <div className="p-3">
+                            <h5 className="text-black text-[18px] font-semibold mb-1">Rochester YMCA</h5>
+                            <p className="text-[14px] font-medium text-black mb-1">08.13.25</p>
+                            <p className="overflow-hidden text-ellipsis [display:-webkit-box] [-webkit-line-clamp:2] [-webkit-box-orient:vertical] text-[14px] font-medium mb-2 text-black">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Rerum eum, voluptatem quae id laboriosam iure repellat perferendis aspernatur corrupti. Nesciunt at reiciendis natus labore assumenda nulla impedit accusantium quidem quam.</p>
+                            <Link href="#" className="flex justify-end text-[14px] font-medium text-black">2 min. read</Link>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </Container>
                 </section>
-                {/* // Partners section */}
+                {/* // Event section */}
 
+
+                {/* Stories section */}
+                <section className="event-sec mt-5">
+                  <Container>
+                    <div className="grid grid-cols-12 gap-4">
+                      <div className="col-span-12">
+                        <h4 className="text-white text-[22px] font-bold">Stories</h4>
+                      </div>
+                      <div className="col-span-12 xl:col-span-4 md:col-span-6 lg:col-span-4">
+                        <div className="bg-[#FFC32B] rounded-3xl">
+                          <img src="https://d3rqy6w6tyyf68.cloudfront.net/AcuCustom/Sitename/DAM/128/scw106-whatispassing-p6_Thumb.png" alt="image" className="w-full h-[250px] object-cover rounded-tl-3xl rounded-tr-3xl" />
+                          <div className="p-3">
+                            <h5 className="text-black text-[18px] font-semibold mb-1">Passing</h5>
+                            <p className="text-[14px] font-medium text-black mb-1">08.13.25</p>
+                            <p className="overflow-hidden text-ellipsis [display:-webkit-box] [-webkit-line-clamp:2] [-webkit-box-orient:vertical] text-[14px] font-medium mb-2 text-black">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Rerum eum, voluptatem quae id laboriosam iure repellat perferendis aspernatur corrupti. Nesciunt at reiciendis natus labore assumenda nulla impedit accusantium quidem quam.</p>
+                            <Link href="#" className="flex justify-end text-[14px] font-medium text-black">2 min. read</Link>
+                          </div>
+                        </div>
+                      </div>
+                      <div className="col-span-12 xl:col-span-4 md:col-span-6 lg:col-span-4">
+                        <div className="bg-[#FFC32B] rounded-3xl">
+                          <img src="https://blog.playo.co/wp-content/uploads/2017/03/football-shots-you-need-to-know.jpg" alt="image" className="w-full h-[250px] object-cover rounded-tl-3xl rounded-tr-3xl" />
+                          <div className="p-3">
+                            <h5 className="text-black text-[18px] font-semibold mb-1">Shooting</h5>
+                            <p className="text-[14px] font-medium text-black mb-1">08.13.25</p>
+                            <p className="overflow-hidden text-ellipsis [display:-webkit-box] [-webkit-line-clamp:2] [-webkit-box-orient:vertical] text-[14px] font-medium mb-2 text-black">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Rerum eum, voluptatem quae id laboriosam iure repellat perferendis aspernatur corrupti. Nesciunt at reiciendis natus labore assumenda nulla impedit accusantium quidem quam.</p>
+                            <Link href="#" className="flex justify-end text-[14px] font-medium text-black">2 min. read</Link>
+                          </div>
+                        </div>
+                      </div>
+                      <div className="col-span-12 xl:col-span-4 md:col-span-6 lg:col-span-4">
+                        <div className="bg-[#FFC32B] rounded-3xl">
+                          <img src="https://stackathlete.com/wp-content/uploads/2021/02/soccer-cone-drill-captainu.jpg" alt="image" className="w-full h-[250px] object-cover rounded-tl-3xl rounded-tr-3xl" />
+                          <div className="p-3">
+                            <h5 className="text-black text-[18px] font-semibold mb-1">Ball handling</h5>
+                            <p className="text-[14px] font-medium text-black mb-1">08.13.25</p>
+                            <p className="overflow-hidden text-ellipsis [display:-webkit-box] [-webkit-line-clamp:2] [-webkit-box-orient:vertical] text-[14px] font-medium mb-2 text-black">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Rerum eum, voluptatem quae id laboriosam iure repellat perferendis aspernatur corrupti. Nesciunt at reiciendis natus labore assumenda nulla impedit accusantium quidem quam.</p>
+                            <Link href="#" className="flex justify-end text-[14px] font-medium text-black">2 min. read</Link>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </Container>
+                </section>
+                {/* // Stories section */}
+
+
+                {/* Coaches section */}
+                <section className="event-sec mt-5">
+                  <Container>
+                    <div className="grid grid-cols-12 gap-4">
+                      <div className="col-span-12">
+                        <h4 className="text-white text-[22px] font-bold">Coaches</h4>
+                      </div>
+                      <div className="col-span-12 xl:col-span-4 md:col-span-6 lg:col-span-4">
+                        <div className="bg-[#FFC32B] rounded-3xl">
+                          <img src="https://i.insider.com/61d8942bd21c1e0019ee49a2?width=700" alt="image" className="w-full h-[250px] object-cover rounded-tl-3xl rounded-tr-3xl" />
+                          <div className="p-3">
+                            <h5 className="text-black text-[18px] font-semibold mb-1">Womens College Basketball </h5>
+                            <p className="text-[14px] font-medium text-black mb-1">08.13.25</p>
+                            <p className="overflow-hidden text-ellipsis [display:-webkit-box] [-webkit-line-clamp:2] [-webkit-box-orient:vertical] text-[14px] font-medium mb-2 text-black">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Rerum eum, voluptatem quae id laboriosam iure repellat perferendis aspernatur corrupti. Nesciunt at reiciendis natus labore assumenda nulla impedit accusantium quidem quam.</p>
+                            <Link href="#" className="flex justify-end text-[14px] font-medium text-black">2 min. read</Link>
+                          </div>
+                        </div>
+                      </div>
+                      <div className="col-span-12 xl:col-span-4 md:col-span-6 lg:col-span-4">
+                        <div className="bg-[#FFC32B] rounded-3xl">
+                          <img src="https://blog.playo.co/wp-content/uploads/2017/03/football-shots-you-need-to-know.jpg" alt="image" className="w-full h-[250px] object-cover rounded-tl-3xl rounded-tr-3xl" />
+                          <div className="p-3">
+                            <h5 className="text-black text-[18px] font-semibold mb-1">Mens College Basketball</h5>
+                            <p className="text-[14px] font-medium text-black mb-1">08.13.25</p>
+                            <p className="overflow-hidden text-ellipsis [display:-webkit-box] [-webkit-line-clamp:2] [-webkit-box-orient:vertical] text-[14px] font-medium mb-2 text-black">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Rerum eum, voluptatem quae id laboriosam iure repellat perferendis aspernatur corrupti. Nesciunt at reiciendis natus labore assumenda nulla impedit accusantium quidem quam.</p>
+                            <Link href="#" className="flex justify-end text-[14px] font-medium text-black">2 min. read</Link>
+                          </div>
+                        </div>
+                      </div>
+                      <div className="col-span-12 xl:col-span-4 md:col-span-6 lg:col-span-4">
+                        <div className="bg-[#FFC32B] rounded-3xl">
+                          <img src="https://www.ncaa.com/_flysystem/public-s3/styles/large_16x9/public-s3/thumbnails/2024-04/FinalSeconds_Thumb.jpg?h=d1cb525d&itok=qGAvcCg8" alt="image" className="w-full h-[250px] object-cover rounded-tl-3xl rounded-tr-3xl" />
+                          <div className="p-3">
+                            <h5 className="text-black text-[18px] font-semibold mb-1">Boys High School</h5>
+                            <p className="text-[14px] font-medium text-black mb-1">08.13.25</p>
+                            <p className="overflow-hidden text-ellipsis [display:-webkit-box] [-webkit-line-clamp:2] [-webkit-box-orient:vertical] text-[14px] font-medium mb-2 text-black">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Rerum eum, voluptatem quae id laboriosam iure repellat perferendis aspernatur corrupti. Nesciunt at reiciendis natus labore assumenda nulla impedit accusantium quidem quam.</p>
+                            <Link href="#" className="flex justify-end text-[14px] font-medium text-black">2 min. read</Link>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </Container>
+                </section>
+                {/* // Coaches section */}
+
+
+                <div className="mt-12 flex justify-center">
+                  <button
+                    onClick={openSignupModal}
+                    className="px-8 py-[12px] bg-[#FFC32B] text-black rounded-full font-semibold shadow-md hover:bg-yellow-300 transition"
+                  >
+                    View More
+                  </button>
+                </div>
+
+ 
 
 
                 {/* Footer */}
@@ -263,7 +357,7 @@ export default function Home() {
 
 
 
-            {/* Sign Up for NFTC Modal */}
+            {/* Sign Up for Challenge Modal */}
             <div
                 className={`fixed inset-0 z-50 flex items-center justify-center bg-black/70 transition-opacity ${
                 modalOpen ? "opacity-100 pointer-events-auto" : "opacity-0 pointer-events-none"
@@ -281,7 +375,7 @@ export default function Home() {
                         &times;
                     </button>
 
-                    <h3 className="text-xl font-bold text-[#FFC32B] mb-4">Sign Up for NFTC</h3> 
+                    <h3 className="text-xl font-bold text-[#FFC32B] mb-4">Sign Up for Challenge</h3> 
                     <form ref={signupFormRef} id="signupForm" onSubmit={submitSignup} className="space-y-4">
                         <div>
                         <label className="block text-sm font-medium mb-1 text-white">Full Name</label>
@@ -346,7 +440,7 @@ export default function Home() {
                     </form>
                 </div>
             </div>
-            {/* Sign Up for NFTC Modal */}
+            {/* Sign Up for Challenge Modal */}
 
 
 
