@@ -169,9 +169,9 @@ export default function Home() {
                     <Container maxWidth="lg">
                       <div className="text-center px-4">
                         <div className="grid text-center xl:flex lg:flex md:flex items-center justify-center mb-5">
-                          <img src="https://nmtdevserver.com/doach/logo.png" alt="image" className="w-[300px]   h-auto" />
-                          <AiOutlinePlus className="text-white text-[50px] font-bold mx-3 invisible xl:!visible lg:!visible md:!visible" />
-                          <img src="https://nmtdevserver.com/doach/cavs-logo.png" alt="image" className="w-[170px] h-auto block m-auto xl:!m-0 lg:!m-0" />
+                          <img src="https://nmtdevserver.com/doach/logo.png" alt="image" className="w-[300px]   h-auto doach-logo1" />
+                          <AiOutlinePlus className="text-white text-[50px] font-bold mx-3 plus-icon" /> 
+                          <img src="https://nmtdevserver.com/doach/cavs-logo.png" alt="image" className="w-[170px] h-auto cavs-logo" />
                           <h4 className="text-white text-[22px] xl:!text-left lg:!text-left md:!text-left text-center ml-5 capitalize font-thin leading-[20px] mt-5 md:!mt-0" style={{ fontFamily: "Bebas Neue, sans-serif;" }}> National <br /> free throw <br /> challenge  <br /> OCT 17 • 23 2025 </h4>
                         </div>
 
