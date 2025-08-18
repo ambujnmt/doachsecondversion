@@ -348,3 +348,22 @@ ul.space-y-1.relative{
   align-items: center;
 }
 /* // Founding Brand Partners logo section css */
+
+
+
+
+
+
+
+@media (max-width: 767px){
+  .plus-icon{
+    display: none;
+  }
+  .doach-logo1{
+    margin-bottom: 10px;
+  }
+  .cavs-logo{
+    display: block;
+    margin: auto;
+  }
+}
